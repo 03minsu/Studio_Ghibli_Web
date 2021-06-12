@@ -5,9 +5,11 @@ html {
     background-color: black;
 }
 h1 {
+    font-size: 50px;
     text-align: center;
     color: pink;
     font-family: 'Do Hyeon', sans-serif;
+    text-shadow: 3px 3px 3px gray;
 }
 #slides > img{
     width: 90%;
@@ -31,10 +33,14 @@ button{
 #next{
     right: 0; /*오른쪽으로 붙여서*/
 }
+button{
+    background-color: white;
+    opacity: 0.5;
+}
 button:hover{
-    background-color: #222;
-    color: white;
-    opacity: 0.6;
+    background-color: white;
+    color: black;
+    opacity: 0.9;
     cursor: pointer; /*포인터로*/
 }
 audio {
