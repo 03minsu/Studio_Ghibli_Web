@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/ponyoo.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <title>千と千尋の神隠し</title>
+</head>
+<body>
+    <h1>센과 치히로의 행방불명</h1>
+    <div class="container">
+        <div id ="slideShow">
+            <div id = "slides">
+                <img src = "/SenAndChihiro/chihiro001.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro002.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro003.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro004.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro005.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro006.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro007.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro008.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro009.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro010.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro011.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro012.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro013.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro014.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro015.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro016.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro017.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro018.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro019.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro020.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro021.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro022.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro023.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro024.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro025.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro026.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro027.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro028.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro029.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro030.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro031.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro032.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro033.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro034.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro035.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro036.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro037.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro038.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro039.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro040.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro041.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro042.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro043.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro044.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro045.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro046.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro047.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro048.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro049.jpg" alt="" width="70%">
+                <img src = "/SenAndChihiro/chihiro050.jpg" alt="" width="70%">
+                <button id = "prev">&lang;</button>
+                <button id = "next">&rang;</button>
+            </div>
+        </div>
+    </div>
+    <div class="sideBanner">
+        <img src="/pngSrc/chihiro.png" style="width: 18%; margin-top: 100px; margin-left: 1550px;">
+    </div>
+    <audio autoplay loop controls>
+        <source src="/OST/chihiro.mp3" type="audio/mp3">
+    </audio>
+    <script src = "/Js/slide.js"></script>
+    <script>
+        var floatPosition = parseInt($(".sideBanner").css('top'))
+
+        // scroll 인식
+        $(window).scroll(function() {
+  
+            // 현재 스크롤 위치
+            var currentTop = $(window).scrollTop();
+            var bannerTop = currentTop + floatPosition + "px";
+
+            //이동 애니메이션
+            $(".sideBanner").stop().animate({
+                "top" : bannerTop
+            }, 200);
+
+        }).scroll();
+    </script>
+</body>
+</html>
