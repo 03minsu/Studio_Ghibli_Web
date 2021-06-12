@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/ponyoo.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <title>崖の上のポニョ</title>
+</head>
+<body>
+    <h1>벼랑 위에 포뇨</h1>
+    <div class="container">
+        <div id ="slideShow">
+            <div id = "slides">
+                <img src = "/ponyoo/ponyo001.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo002.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo003.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo004.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo005.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo006.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo007.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo008.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo009.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo010.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo011.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo012.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo013.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo014.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo015.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo016.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo017.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo018.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo019.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo020.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo021.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo022.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo023.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo024.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo025.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo026.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo027.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo028.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo029.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo030.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo031.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo032.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo033.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo034.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo035.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo036.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo037.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo038.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo039.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo040.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo041.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo042.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo043.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo044.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo045.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo046.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo047.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo048.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo049.jpg" alt="" width="70%">
+                <img src = "/ponyoo/ponyo050.jpg" alt="" width="70%">
+                <button id = "prev">&lang;</button>
+                <button id = "next">&rang;</button>
+            </div>
+        </div>
+    </div>
+    <div class="sideBanner">
+        <img src="/pngSrc/ponyoo.png" style="width: 18%; margin-top: 80px; margin-left: 1550px;">
+    </div>
+    <audio autoplay loop controls>
+        <source src="/OST/Ponyo.mp3" type="audio/mp3">
+    </audio>
+    <script src = "/Js/slide.js"></script>
+    <script>
+        var floatPosition = parseInt($(".sideBanner").css('top'))
+
+        // scroll 인식
+        $(window).scroll(function() {
+  
+            // 현재 스크롤 위치
+            var currentTop = $(window).scrollTop();
+            var bannerTop = currentTop + floatPosition + "px";
+
+            //이동 애니메이션
+            $(".sideBanner").stop().animate({
+                "top" : bannerTop
+            }, 200);
+
+        }).scroll();
+    </script>
+</body>
+</html>
