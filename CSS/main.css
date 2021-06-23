@@ -2,8 +2,14 @@
 html {
     background-color: #109ceb;
 }
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 .main {
     text-align: center;
+    pointer-events: none;
 }
 a {
     color: white;
@@ -11,8 +17,16 @@ a {
     font-family: 'Do Hyeon', sans-serif;
 }
 a:hover{
-    color: thistle;
+    color: salmon;
 }
 nav {
     display: block;
+}
+li {
+    list-style: none;
+}
+.box {
+    background-color: black; 
+    padding: 33px;
+    margin: 0; 
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/ponyoo.css">
+    <script src="./Js/jquery.js"></script>
+    <title>天空の城ラピュタ</title>
+</head>
+<body>
+    <div data-tooltip-text="하늘을 천공의 성들과 비행선으로 가득 메우던 문명이 쇠퇴하고 긴 세월이 흐른 세계.증기기관이 돌아가고 
+    사람들은 다시 비행기로 하늘을 향해 날아오르고 있었다. 라퓨타로 향하는 열쇠인 비행석을 노리는 정부와 해적단 '도라' 일가의 
+    추적을 받던 소녀 시타는 비행선에서 추락하게 되지만 비행석의 힘으로 천천히 떨어져 다행히 목숨을 건지게 된다. 
+    한편 비행 중 하늘에서 성을 봤다고 주장하다가 거짓말쟁이 취급을 받고 죽은 아버지를 둔 소년 파즈는 
+    하늘에서 떨어진 시타와 만나게 되고 해적단과 정부의 손에서 시타를 구하기 위해 최선을 다한다.">
+        <audio autoplay loop controls style="float: right;">
+            <source src="./OST/laputa.mp3" type="audio/mp3">
+        </audio>
+        <a href="./index.html" style="text-decoration: none;"><img src="./ghibli.png"></a>
+        <span style="float: left; margin-left: 660px; margin-top: 28px;">천공의 성 라퓨타</span>
+    </div>
+    <div class="container">
+        <div id ="slideShow">
+            <div id = "slides">
+                <img src = "./laputa/laputa001.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa002.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa003.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa004.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa005.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa006.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa007.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa008.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa009.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa010.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa011.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa012.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa013.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa014.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa015.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa016.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa017.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa018.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa019.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa020.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa021.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa022.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa023.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa024.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa025.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa026.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa027.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa028.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa029.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa030.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa031.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa032.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa033.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa034.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa035.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa036.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa037.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa038.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa039.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa040.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa041.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa042.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa043.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa044.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa045.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa046.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa047.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa048.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa049.jpg" alt="" width="70%">
+                <img src = "./laputa/laputa050.jpg" alt="" width="70%">
+                <button id = "prev">&lang;</button>
+                <button id = "next">&rang;</button>
+            </div>
+        </div>
+    </div>
+    <div class="sideBanner">
+        <img src="./pngSrc/laputa.png" style="width: 13%; margin-top: 20px; margin-left: 1600px;">
+    </div>
+    <div class="box">
+    </div>
+    <script src = "./Js/slide.js"></script>
+    <script>
+        var floatPosition = parseInt($(".sideBanner").css('top'))
+
+        // scroll 인식
+        $(window).scroll(function() {
+  
+            // 현재 스크롤 위치
+            var currentTop = $(window).scrollTop();
+            var bannerTop = currentTop + floatPosition + "px";
+
+            //이동 애니메이션
+            $(".sideBanner").stop().animate({
+                "top" : bannerTop
+            }, 200);
+
+        }).scroll();
+    </script>
+</body>
+</html>

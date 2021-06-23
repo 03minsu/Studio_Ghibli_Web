@@ -4,6 +4,7 @@ var next = document.getElementById("next");
 
 var current = 0; //표시할 이미지 위치.
 showSlides(current);
+setInterval(nextSlide, 3000);
 prev.onclick = prevSlide;
 next.onclick = nextSlide;
 

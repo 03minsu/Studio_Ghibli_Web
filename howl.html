@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/ponyoo.css">
+    <script src="./Js/jquery.js"></script>
+    <title>ハウルの動く城</title>
+</head>
+<body>
+    <div data-tooltip-text="
+    소녀가 마법에 걸린 순간, 
+    꽃미남 마법사의 성문이 열렸다! 어느 날, 
+    영문도 모른 채 마녀의 저주로 인해 할머니가 된 소녀 '소피'. 
+    절망 속에서 길을 걷다가 거대한 마법의 성에 들어가게 된다. 
+    그곳에서 자신과 마법사 하울의 계약을 깨주면 저주를 풀어주겠다는 
+    불꽃악마 캘시퍼의 제안을 받고 청소부가 되어 ‘움직이는 성’에 머물게 되는데…
+    ">
+        <audio autoplay loop controls style="float: right;">
+            <source src="./OST/howl.mp3  " type="audio/mp3">
+        </audio>
+        <a href="./index.html" style="text-decoration: none;"><img src="./ghibli.png"></a>
+        <span style="float: left; margin-left: 640px; margin-top: 30px;">하울의 움직이는 성</span>
+    </div>
+    <div class="container">
+        <div id ="slideShow">
+            <div id = "slides">
+                <img src = "./howl/howl001.jpg" alt="" width="70%">
+                <img src = "./howl/howl002.jpg" alt="" width="70%">
+                <img src = "./howl/howl003.jpg" alt="" width="70%">
+                <img src = "./howl/howl004.jpg" alt="" width="70%">
+                <img src = "./howl/howl005.jpg" alt="" width="70%">
+                <img src = "./howl/howl006.jpg" alt="" width="70%">
+                <img src = "./howl/howl007.jpg" alt="" width="70%">
+                <img src = "./howl/howl008.jpg" alt="" width="70%">
+                <img src = "./howl/howl009.jpg" alt="" width="70%">
+                <img src = "./howl/howl010.jpg" alt="" width="70%">
+                <img src = "./howl/howl011.jpg" alt="" width="70%">
+                <img src = "./howl/howl012.jpg" alt="" width="70%">
+                <img src = "./howl/howl013.jpg" alt="" width="70%">
+                <img src = "./howl/howl014.jpg" alt="" width="70%">
+                <img src = "./howl/howl015.jpg" alt="" width="70%">
+                <img src = "./howl/howl016.jpg" alt="" width="70%">
+                <img src = "./howl/howl017.jpg" alt="" width="70%">
+                <img src = "./howl/howl018.jpg" alt="" width="70%">
+                <img src = "./howl/howl019.jpg" alt="" width="70%">
+                <img src = "./howl/howl020.jpg" alt="" width="70%">
+                <img src = "./howl/howl021.jpg" alt="" width="70%">
+                <img src = "./howl/howl022.jpg" alt="" width="70%">
+                <img src = "./howl/howl023.jpg" alt="" width="70%">
+                <img src = "./howl/howl024.jpg" alt="" width="70%">
+                <img src = "./howl/howl025.jpg" alt="" width="70%">
+                <img src = "./howl/howl026.jpg" alt="" width="70%">
+                <img src = "./howl/howl027.jpg" alt="" width="70%">
+                <img src = "./howl/howl028.jpg" alt="" width="70%">
+                <img src = "./howl/howl029.jpg" alt="" width="70%">
+                <img src = "./howl/howl030.jpg" alt="" width="70%">
+                <img src = "./howl/howl031.jpg" alt="" width="70%">
+                <img src = "./howl/howl032.jpg" alt="" width="70%">
+                <img src = "./howl/howl033.jpg" alt="" width="70%">
+                <img src = "./howl/howl034.jpg" alt="" width="70%">
+                <img src = "./howl/howl035.jpg" alt="" width="70%">
+                <img src = "./howl/howl036.jpg" alt="" width="70%">
+                <img src = "./howl/howl037.jpg" alt="" width="70%">
+                <img src = "./howl/howl038.jpg" alt="" width="70%">
+                <img src = "./howl/howl039.jpg" alt="" width="70%">
+                <img src = "./howl/howl040.jpg" alt="" width="70%">
+                <img src = "./howl/howl041.jpg" alt="" width="70%">
+                <img src = "./howl/howl042.jpg" alt="" width="70%">
+                <img src = "./howl/howl043.jpg" alt="" width="70%">
+                <img src = "./howl/howl044.jpg" alt="" width="70%">
+                <img src = "./howl/howl045.jpg" alt="" width="70%">
+                <img src = "./howl/howl046.jpg" alt="" width="70%">
+                <img src = "./howl/howl047.jpg" alt="" width="70%">
+                <img src = "./howl/howl048.jpg" alt="" width="70%">
+                <img src = "./howl/howl049.jpg" alt="" width="70%">
+                <img src = "./howl/howl050.jpg" alt="" width="70%">
+                <button id = "prev">&lang;</button>
+                <button id = "next">&rang;</button>
+            </div>
+        </div>
+    </div>
+    <div class="sideBanner">
+        <img src="./pngSrc/howl.png" style="width: 18%; margin-top: 80px; margin-left: 1550px;">
+    </div>
+    <div class="box">
+    </div>
+    <script src = "./Js/slide.js"></script>
+    <script>
+        var floatPosition = parseInt($(".sideBanner").css('top'))
+
+        // scroll 인식
+        $(window).scroll(function() {
+  
+            // 현재 스크롤 위치
+            var currentTop = $(window).scrollTop();
+            var bannerTop = currentTop + floatPosition + "px";
+
+            //이동 애니메이션
+            $(".sideBanner").stop().animate({
+                "top" : bannerTop
+            }, 200);
+
+        }).scroll();
+    </script>
+</body>
+</html>
